@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: bigquery-public-data
+    database: bigquery-public-data  
+    schema: london_bicycles  
+    tables:
+      - name: cycle_hire
+      - name: cycle_stations
