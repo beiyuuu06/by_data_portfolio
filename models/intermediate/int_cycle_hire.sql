@@ -22,7 +22,7 @@ select
     start_station_name,
     end_station_id,
     end_station_name,
-    CONCAT(start_station_name, ' - ', end_station_name)         AS route,
+    CONCAT('[',start_station_name,']  ---  [', end_station_name,']')       AS route,
     Round(duration/60, 1)                                       AS duration_in_mins,
     IF(start_station_name = end_station_name, true, false)      AS start_and_end_at_the_same_station_flag,
 from a
